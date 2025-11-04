@@ -240,3 +240,74 @@ body {
     width: 80%;
   }
 }
+.container-2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /*center everything*/
+  text-align: center;
+}
+ h1 {
+  font-size: 38px;
+  font-weight: 700;
+ }
+ .top-btn {
+   float: right;
+   background: #ff3d6b;
+   padding: 12px 25px;
+   border-radius: 8px;
+   color: white;
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: bold;
+   margin-top: -50px;
+ }
+.speakers-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minimax (250px, 1fr));
+  gap: 30px;
+  
+}
+.card {
+  background: #1c2330;
+  padding: 25px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+}
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.role {
+  font-size: 14px;
+  color: #b8c0cc;
+}
+ *join as a speaker card*
+ .join-card {
+   background: #1c2330;
+   padding: 45px 20px;
+   width: 250px;
+   height: 180px;
+   display: flex;
+   justify-content: center;
+   border-radius: 12px;
+   cursor: pointer;
+   border: 1.5px dashed #fff;
+ }
+ .join-card div {
+     text-align: center;
+     font-size: 16px;
+ }
+.plus {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
