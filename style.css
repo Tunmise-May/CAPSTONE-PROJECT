@@ -341,6 +341,7 @@ button[type="submit"]:hover {
 .card p {
   font-size: 0.9rem;
   color: #aaa;
+  margin-bottom: 8px;
 }
 
 .join-card {
