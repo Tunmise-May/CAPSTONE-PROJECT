@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Conference Website</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="#" class="logo">Your Logo Here</a>
+      <button class="register-btn" id="registerBtn">Register Now</button>
+    </nav>
+
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h3>Registration Form</h3>
+        <form>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" placeholder="Enter your name" required><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" placeholder="Enter your email" required><br>
+
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" placeholder="Enter password" required><br><br>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1>Javascript<br>Conference 2025</h1>
+
+        <div class="countdown js-countdown">
+          <div class="time-box">
+            <span class="number">00</span>
+            <span class="label">Days</span>
+          </div>
+          <span class="colon">:</span>
+          <div class="time-box">
+            <span class="number">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <span class="colon">:</span>
+          <div class="time-box">
+            <span class="number">00</span>
+            <span class="label">Mins</span>
+          </div>
+          <span class="colon">:</span>
+          <div class="time-box">
+            <span class="number">00</span>
+            <span class="label">Secs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/speaker.jpg" alt="Conference Speaker">
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-container">
+        
+        <div class="about-images">
+          <img src="images/speaker2.jpg" alt="Speaker on stage" class="img-top">
+          <div class="img-overlay">
+            <img src="images/audience.jpg" alt="Audience" class="img-bottom">
+            <div class="play-btn">
+              <span>▶</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h2>About Conference</h2>
+          <p>
+            The annual JSConf 2025 took place in Berlin from May 12–14, bringing together over 2,000 developers, engineers, and tech enthusiasts from around the world. The conference focused on emerging trends in JavaScript, including performance optimization, frameworks, and AI-driven web tools.
+          </p>
+          <p class="address">42 Drive, Florida, USA</p>
+
+          <div class="about-stats">
+            <div class="stat-box">
+              <h3>2</h3>
+              <p>Days Event</p>
+            </div>
+            <div class="stat-box">
+              <h3>15+</h3>
+              <p>Speakers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="speaker-section">
+      <div class="speaker-container">
+        <div class="header">
+          <h2>Speakers</h2>
+          <button id="seeAll">See all speakers</button>
+        </div>
+
+        <div class="speakers">
+          <div class="card">
+            <img src="images/franki.jpg" alt="Franki Wright">
+            <h3>Franki Wright</h3>
+            <p>Full Stack Engineer</p>
+          </div>
+
+          <div class="card">
+            <img src="images/john.jpg" alt="John Henry">
+            <h3>John Henry</h3>
+            <p>Software Engineer</p>
+          </div>
+
+          <div class="card">
+            <img src="images/jerry.jpg" alt="Jerry Wallace">
+            <h3>Jerry Wallace</h3>
+            <p>Javascript Engineer</p>
+          </div>
+
+          <div class="card">
+            <img src="images/james.jpg" alt="James Valdes">
+            <h3>James Valdes</h3>
+            <p>Full-Stack Developer</p>
+          </div>
+
+          <div class="card">
+            <img src="images/erny.jpg" alt="Erny Sukmana">
+            <h3>Erny Sukmana</h3>
+            <p>Lead Engineer</p>
+          </div>
+
+          <div class="join-card" id="joinSpeaker">
+            <div class="plus">+</div>
+            <h3>Join as a Speaker</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule-section">
+      <div class="schedule-container">
+        <h1 class="title">Conference Schedule</h1>
+        <p class="subtitle">
+        This conference offers a dynamic mix of keynotes, technical sessions, and workshops designed to inspire and educate JavaScript developers at all levels.
+        </p>
+        <h3 class="date">Friday, 10 December 2025</h3>
+
+        <div class="schedule">
+          <div class="schedule-item">
+            <div class="time">09:00–10:00</div>
+            <div class="details">
+              <h4>Event Registration</h4>
+              <p>Join developers from around the world at JSConf 2025, happening in Berlin from December 12–14, 2025. Discover the latest in JavaScript, from AI-powered tools to modern frameworks like React, Vue, and Svelte.</p>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="time">10:00–12:00</div>
+            <div class="details">
+              <h4>The Future of JS</h4>
+              <p>JavaScript is evolving beyond the browser — powering servers, mobile apps, and AI-driven tools. With faster runtimes like Bun and Deno, and frameworks such as React and Next.js, development is becoming faster and smarter. The future of JavaScript is all about speed, simplicity, and innovation.</p>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="time">12:00–02:00</div>
+            <div class="details">
+              <h4>Javascript Ecosystem</h4>
+              <p>The JavaScript ecosystem is fast-evolving, featuring powerful tools like React, Node.js, and TypeScript. It drives modern web, mobile, and server development, making JavaScript one of the most versatile languages in tech.</p>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="time">03:00–04:00</div>
+            <div class="details">
+              <h4>Javascript Algorithm</h4>
+              <p>JavaScript algorithms form the core of efficient programming — solving problems through logic and optimization. From sorting and searching to data manipulation and recursion, algorithms help developers write faster, smarter code. Mastering them strengthens problem-solving skills and improves overall app performance.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn">See All Schedule</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="newsletter">
+        <h2>Join our newsletter to get latest <br> updates about conference.</h2>
+        <div class="form">
+          <input type="email" placeholder="Email Address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="socials">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p>JS Conf @ 2025</p>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of conference</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
