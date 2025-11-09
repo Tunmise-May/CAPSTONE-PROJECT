@@ -7,7 +7,7 @@ It showcases a professional landing page for the *JavaScript Conference 2025*, i
 
 ## 🌐 Live Demo
 [👉 View Demo](#)  
-(*Add your live GitHub Pages or Netlify link here*)
+https://capstone-project-one-ebon.vercel.app/
 
 ---
 
